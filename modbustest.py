@@ -9,22 +9,23 @@ instrument.serial.timeout=0.2
 
 ##First calibrate
 
-try:
-	instrument.write_register(3, 2) # Registernumber, calibrating
-	print("Calibrating...")
-except Exception as e:
-  	print(e)
+#try:
+#	instrument.write_register(3, 2) # Registernumber, calibrating
+#	print("Calibrating...")
+#except Exception as e:
+#  	print(e)
 
 
-answer = input("Proceed: ")
+#answer = input("Proceed: ")
 
-try:
-  instrument.write_register(3, 0) # Registernumber, running
-  print("Running...")
-except Exception as e:
-  print(e)
+#try:
+#  instrument.write_register(3, 0) # Registernumber, running
+#  print("Running...")
+#except Exception as e:
+#  print(e)
 
-motor, degree
+motor = 0
+degree = 0
 while(1):
   try:
     motor = input("Motor number: ")
